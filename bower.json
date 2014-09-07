@@ -1,7 +1,7 @@
 {
   "name": "bounce-in-animation",
   "version": "0.0.0",
-  "description": "A bounce in animation effect.",
+  "description": "A Polymer web component for bounce in animation effect.",
   "homepage": "https://github.com/mbykovskyy/bounce-in-animation",
   "author": "Maksym Bykovskyy",
   "license": "MIT",
