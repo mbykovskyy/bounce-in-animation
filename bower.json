@@ -1,0 +1,28 @@
+{
+  "name": "bounce-in-animation",
+  "version": "0.0.0",
+  "description": "A bounce in animation effect.",
+  "homepage": "https://github.com/mbykovskyy/bounce-in-animation",
+  "author": "Maksym Bykovskyy",
+  "license": "MIT",
+  "main": "bounce-in-animation.html",
+  "keywords": [
+    "bounce-in-animation",
+    "web-component",
+    "web-components",
+    "polymer",
+    "bounce",
+    "animation"
+  ],
+  "ignore": [
+    "**/.*",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.4.0",
+    "core-animation": "Polymer/core-animation#~0.4.0"
+  },
+  "devDependencies": {
+    "polymer-test-tools": "Polymer/polymer-test-tools#~0.4.0"
+  }
+}

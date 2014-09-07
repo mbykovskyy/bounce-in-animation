@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>Should Have Correct Scaling</title>
+  <script src="../../platform/platform.js"></script>
+  <link rel="import" href="../../polymer-test-tools/tools.html">
+  <script src="../../polymer-test-tools/htmltest.js"></script>
+  <link rel="import" href="../bounce-in-animation.html">
+</head>
+<body unresolved>
+  <bounce-in-animation id="bounce-in"></bounce-in-animation>
+
+  <script>
+    document.addEventListener('polymer-ready', function() {
+      var animation = document.getElementById('bounce-in').shadowRoot;
+      var transforms = animation.querySelectorAll('core-animation-prop[name="transform"]');
+      
+      assert.equal(7, transforms.length);
+      assert.equal('scale(0)', transforms[0].value);
+      assert.equal('scale(1.5)', transforms[1].value);
+      assert.equal('scale(0.8)', transforms[2].value);
+      assert.equal('scale(1.2)', transforms[3].value);
+      assert.equal('scale(0.95)', transforms[4].value);
+      assert.equal('scale(1.05)', transforms[5].value);
+      assert.equal('scale(1)', transforms[6].value);
+      done();
+    });
+  </script>
+</body>
+</html>

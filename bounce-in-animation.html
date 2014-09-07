@@ -1,0 +1,58 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-animation/core-animation.html">
+
+<!--
+A bounce in animation effect.
+
+Example:
+
+    <link rel="import" href="bounce-in-animation.html">
+
+    <div id="box"></div>
+    <bounce-in-animation id="bounce-in" duration="500" easing="ease-out"></bounce-in-animation>
+
+    <script>
+      document.addEventListener('polymer-ready', function() {
+        var animation = document.getElementById('bounce-in');
+        animation.target = document.getElementById('box');
+        animation.play();
+      });
+    </script>
+
+@element bounce-in-animation
+@blurb A bounce in animation effect
+@homepage http://mbykovskyy.github.io/bounce-in-animation
+@demo http://mbykovskyy.github.io/bounce-in-animation/demo.html
+-->
+<polymer-element name="bounce-in-animation" extends="core-animation" noscript>
+  <template>
+    <core-animation-keyframe>
+      <core-animation-prop name="visibility" value="visible"></core-animation-prop>
+      <core-animation-prop name="transform" value="scale(0)"></core-animation-prop>
+    </core-animation-keyframe>
+    <core-animation-keyframe>
+      <core-animation-prop name="visibility" value="visible"></core-animation-prop>
+      <core-animation-prop name="transform" value="scale(1.5)"></core-animation-prop>
+    </core-animation-keyframe>
+    <core-animation-keyframe>
+      <core-animation-prop name="visibility" value="visible"></core-animation-prop>
+      <core-animation-prop name="transform" value="scale(0.8)"></core-animation-prop>
+    </core-animation-keyframe>
+    <core-animation-keyframe>
+      <core-animation-prop name="visibility" value="visible"></core-animation-prop>
+      <core-animation-prop name="transform" value="scale(1.2)"></core-animation-prop>
+    </core-animation-keyframe>
+    <core-animation-keyframe>
+      <core-animation-prop name="visibility" value="visible"></core-animation-prop>
+      <core-animation-prop name="transform" value="scale(0.95)"></core-animation-prop>
+    </core-animation-keyframe>
+    <core-animation-keyframe>
+      <core-animation-prop name="visibility" value="visible"></core-animation-prop>
+      <core-animation-prop name="transform" value="scale(1.05)"></core-animation-prop>
+    </core-animation-keyframe>
+    <core-animation-keyframe>
+      <core-animation-prop name="visibility" value="visible"></core-animation-prop>
+      <core-animation-prop name="transform" value="scale(1)"></core-animation-prop>
+    </core-animation-keyframe>
+  </template>
+</polymer-element>
