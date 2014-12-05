@@ -19,10 +19,10 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.4.0",
-    "core-animation": "Polymer/core-animation#~0.4.0"
+    "polymer": "Polymer/polymer#~0.5.1",
+    "core-animation": "Polymer/core-animation#~0.5.1"
   },
   "devDependencies": {
-    "polymer-test-tools": "Polymer/polymer-test-tools#~0.4.0"
+    "polymer-test-tools": "Polymer/polymer-test-tools#~0.5.1"
   }
 }
