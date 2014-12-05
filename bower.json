@@ -1,0 +1,7 @@
+{
+  "name": "bounce-in-animation#gh-pages",
+  "private": true,
+  "dependencies": {
+    "bounce-in-animation": "mbykovskyy/bounce-in-animation#master"
+  }
+}
